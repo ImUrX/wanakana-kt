@@ -1,5 +1,5 @@
 ext {
-    artifactVersion = '1.1.1'
+    artifactVersion = '2.0.0'
     publishGroupId = 'dev.esnault.wanakana'
     githubRepoName = 'esnaultdev/wanakana-kt'
     githubRepoUrl = "https://github.com/$githubRepoName"
@@ -25,6 +25,7 @@ if (localPropsFile.exists()) {
     ext["sonatypeStagingProfileId"] = properties.getProperty('sonatypeStagingProfileId', '')
 }
 
+/*
 // Set up Sonatype repository
 nexusPublishing {
     repositories {
@@ -36,4 +37,4 @@ nexusPublishing {
             snapshotRepositoryUrl.set(uri("https://s01.oss.sonatype.org/content/repositories/snapshots/"))
         }
     }
-}
+}*/
