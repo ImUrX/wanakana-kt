@@ -10,6 +10,6 @@ internal fun isRomaji(input: String, allowed: Regex? = null): Boolean {
     }
 }
 
-internal fun isRomaji(input: Char): Boolean = input.toInt().let { charCode ->
+internal fun isRomaji(input: Char): Boolean = input.code.let { charCode ->
     Constants.ROMAJI_RANGES.any { range -> charCode in range }
 }

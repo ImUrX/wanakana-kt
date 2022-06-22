@@ -22,7 +22,7 @@ internal fun hiraganaToKatakana(input: String): String = buildString {
             append(char)
         } else if (char.isHiragana()) {
             // Shift charcode.
-            val code = char.toInt() + (Constants.KATAKANA_START - Constants.HIRAGANA_START)
+            val code = char.code + (Constants.KATAKANA_START - Constants.HIRAGANA_START)
             val kataChar = code.toChar()
             append(kataChar)
         } else {

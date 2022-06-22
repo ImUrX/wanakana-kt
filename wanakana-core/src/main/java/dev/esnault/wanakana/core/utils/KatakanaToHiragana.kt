@@ -34,7 +34,7 @@ internal fun katakanaToHiragana(input: String, isDestinationRomaji: Boolean = fa
                 }
             } else if (!char.isLongDash() && char.isKatakana()) {
                 // Shift charcode.
-                val code = char.toInt() + (Constants.HIRAGANA_START - Constants.KATAKANA_START)
+                val code = char.code + (Constants.HIRAGANA_START - Constants.KATAKANA_START)
                 val hiraChar = code.toChar()
                 previousKana = hiraChar
                 append(hiraChar)

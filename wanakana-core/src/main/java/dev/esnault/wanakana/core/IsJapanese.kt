@@ -10,6 +10,6 @@ internal fun isJapanese(input: String, allowed: Regex? = null): Boolean {
     }
 }
 
-internal fun isJapanese(input: Char): Boolean = input.toInt().let { charCode ->
+internal fun isJapanese(input: Char): Boolean = input.code.let { charCode ->
     Constants.JAPANESE_RANGES.any { range -> charCode in range }
 }
