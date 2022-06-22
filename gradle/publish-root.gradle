@@ -1,9 +1,4 @@
-ext {
-    artifactVersion = '2.0.0'
-    publishGroupId = 'dev.esnault.wanakana'
-    githubRepoName = 'esnaultdev/wanakana-kt'
-    githubRepoUrl = "https://github.com/$githubRepoName"
-}
+
 
 // Create secret variables with empty default values
 ext["signing.keyId"] = ''

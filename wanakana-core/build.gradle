@@ -51,4 +51,4 @@ ext {
     PUBLISH_DESCRIPTION = 'Kotlin port of WanaKana, a library for detecting and transliterating Hiragana, Katakana and Romaji.'
 }
 
-apply from: "${rootProject.projectDir}/gradle/publish-module.gradle"
+//apply from: "${rootProject.projectDir}/gradle/publish-module.gradle"
